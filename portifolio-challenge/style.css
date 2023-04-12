@@ -18,60 +18,89 @@
   .sections-wrapper{
     display: flex;
     gap: 3.80%;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    padding: 2rem;
   }
 
   .generic-card-style{
     background-color: var(--bg-cards);
     color: var(--text-color);
     border-radius: 1rem;
+    padding: 0.5rem 1rem;
   }
 
   .collumn-1{
     display: grid;
     /* border: solid white 2px; */
-    height: 100vh;
-    width: 20vw;
     row-gap: 2rem;
   }
 
   .collumn-2{
     display: flex;
     border: solid red 2px;
-    width: 70vw;
 
   }
 
   #profile-container{
     display: flex;
-    width: 348px;
-    height: 292px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 2rem 0 0 0;
+    padding: 2rem;
   }
 
   #my-informations{
     width: 348px;
-    height: 348px;
+    height: auto;
+  }
+  
+  ul{
+    padding-left: 1rem;
+  }
+
+  .information-generic-styles {
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 2.5rem;
+    list-style-type: none;
+    line-height: 1.5;
+  }
+
+  #location-icon {
+    background-image: url('/images/map-pin.svg');
+
+  }
+  
+  #ocupation-icon {
+    background-image: url('/images/briefcase.svg');
+  }
+  
+  #gitHub-icon {
+    background-image: url('/images/github.svg');
+  }
+  
+  #linkedin-icon {
+    background-image: url('/images/linkedin.svg');
+  }
+  
+  #email-icon {     
+    background-image: url('/images/mail.svg');
   }
 
   #my-skills{
     width: 348px;
-    height: 208px;
+    height: auto;
   }
 
   #my-experiences{
     width: 348px;
-    height: 349px;
+    height: auto;
 
   }
 
   #education{
     width: 348px;
-    height: 352px;
+    height: auto;
 
   }
 
