@@ -1,128 +1,153 @@
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap");
 
+/* global styles */
 :root {
-    --body-bg-color: #22212C;
-    --text-color: #837E9F;
-    --bg-cards: #302F3D;
-    --bg-techs: #CB92B1;
-    --generic-font: 'Merriweather Sans', sans-serif;
-  }
+  --body-bg-color: #22212c;
+  --text-color: #837e9f;
+  --bg-cards: #302f3d;
+  --bg-techs: #cb92b1;
+  --generic-font: "Merriweather Sans", sans-serif;
+}
 
-  body{
-   background-color: var(--body-bg-color);
-   font-family: var(--generic-font);
-   margin: 0;
-   padding: 0;
-  }
-  
-  .sections-wrapper{
-    display: flex;
-    gap: 3.80%;
-    width: 100%;
-    padding: 2rem;
-  }
+h3 {
+  font-weight: 700;
+}
 
-  .generic-card-style{
-    background-color: var(--bg-cards);
-    color: var(--text-color);
-    border-radius: 1rem;
-    padding: 0.5rem 1rem;
-  }
+h4 {
+  font-weight: 500;
+}
 
-  .collumn-1{
-    display: grid;
-    /* border: solid white 2px; */
-    row-gap: 2rem;
-  }
+p {
+  font-weight: 400;
+}
 
-  .collumn-2{
-    display: flex;
-    border: solid red 2px;
+body {
+  background-color: var(--body-bg-color);
+  font-family: var(--generic-font);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 
-  }
+/* left side */
+.collumn-1 {
+  display: grid;
+  row-gap: 2rem;
+}
 
-  #profile-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 2rem;
-  }
+.sections-wrapper {
+  display: flex;
+  gap: 3.8%;
+  width: 100%;
+  padding: 2rem;
+}
 
-  #my-informations{
-    width: 348px;
-    height: auto;
-  }
-  
-  ul{
-    padding-left: 1rem;
-  }
+.generic-card-style {
+  background-color: var(--bg-cards);
+  color: var(--text-color);
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  z-index: -1;
+}
 
-  .information-generic-styles {
-    background-repeat: no-repeat;
-    background-position: left center;
-    padding-left: 2.5rem;
-    list-style-type: none;
-    line-height: 1.5;
-  }
+#profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
 
-  #location-icon {
-    background-image: url('/images/map-pin.svg');
+#image-container {
+  border: solid lime 2px;
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 50px;
+  background: none;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  overflow: hidden;
+}
 
-  }
-  
-  #ocupation-icon {
-    background-image: url('/images/briefcase.svg');
-  }
-  
-  #gitHub-icon {
-    background-image: url('/images/github.svg');
-  }
-  
-  #linkedin-icon {
-    background-image: url('/images/linkedin.svg');
-  }
-  
-  #email-icon {     
-    background-image: url('/images/mail.svg');
-  }
+.profile-picture {
+  object-fit: cover;
+  min-width: 100%;
+}
 
-  #my-skills{
-    width: 348px;
-    height: auto;
-  }
+ul {
+  padding-left: 1rem;
+}
 
-  #my-experiences{
-    width: 348px;
-    height: auto;
+.information-generic-styles {
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding: 0 0 0 2.5rem;
+  list-style-type: none;
+  line-height: 1.5;
+  margin: 0 0 0.5rem 0;
+}
 
-  }
+#location-icon {
+  background-image: url("/images/map-pin.svg");
+}
 
-  #education{
-    width: 348px;
-    height: auto;
+#ocupation-icon {
+  background-image: url("/images/briefcase.svg");
+}
 
-  }
+#gitHub-icon {
+  background-image: url("/images/github.svg");
+}
 
-  .profile-picture{
-    height: 128px;
-    width: 128px;
-  }
+#linkedin-icon {
+  background-image: url("/images/linkedin.svg");
+}
 
-  h3{
-    font-weight: 700;
-  }
+#email-icon {
+  background-image: url("/images/mail.svg");
+}
 
-  p{
-    font-weight: 400;
-  }
-  
-  #my-name{
-    margin: 1.5rem 0 0.7rem 0;
-    font-size:1rem;
-  }
+#skills-container {
+  display: grid;
+  grid-template-areas:
+    " . . ."
+    " . . .";
+}
 
-  #my-profession{
-    margin: 0;
-    font-size:0.8rem;
-  }
+.my-skills {
+  background-color: var(--bg-techs);
+  border-radius: 0.6rem;
+  text-align: center;
+  color: black;
+  font-size: 0.8rem;
+  width: 6rem;
+  padding: 0.2rem;
+  margin: 0.4rem 0.3rem;
+}
+
+#my-experiences {
+}
+
+#education {
+}
+
+#my-name {
+  margin: 1.5rem 0 0.7rem 0;
+  font-size: 1rem;
+}
+
+#my-profession {
+  margin: 0;
+  font-size: 0.8rem;
+}
+
+/* right side */
+.collumn-2 {
+  display: grid;
+  grid-template-areas:
+    ". ."
+    ". ."
+    ". ."
+    ". .";
+  /* border: solid red 2px; */
+}
