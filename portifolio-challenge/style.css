@@ -11,10 +11,12 @@
 
 h3 {
   font-weight: 700;
+  margin: 1rem 0 0 0;
 }
 
 h4 {
   font-weight: 500;
+  margin: 0;
 }
 
 p {
@@ -47,7 +49,6 @@ body {
   color: var(--text-color);
   border-radius: 1rem;
   padding: 0.5rem 1rem;
-  z-index: -1;
 }
 
 #profile-container {
@@ -56,22 +57,18 @@ body {
   align-items: center;
   justify-content: center;
   padding: 2rem;
+
 }
 
 #image-container {
-  border: solid lime 2px;
-  width: 100px;
-  height: 100px;
-  -moz-border-radius: 50px;
-  background: none;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
-  overflow: hidden;
+  border-radius: 50%;
+  width: 148px;
+  height: 148px;
 }
 
 .profile-picture {
+  width: 104px;
   object-fit: cover;
-  min-width: 100%;
 }
 
 ul {
@@ -84,7 +81,7 @@ ul {
   padding: 0 0 0 2.5rem;
   list-style-type: none;
   line-height: 1.5;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.5rem 0;  
 }
 
 #location-icon {
@@ -125,15 +122,8 @@ ul {
   margin: 0.4rem 0.3rem;
 }
 
-#my-experiences {
-}
-
-#education {
-}
-
 #my-name {
   margin: 1.5rem 0 0.7rem 0;
-  font-size: 1rem;
 }
 
 #my-profession {
@@ -141,13 +131,69 @@ ul {
   font-size: 0.8rem;
 }
 
+.li-comun-margin{
+  margin-bottom: 0.5rem ;
+}
+
 /* right side */
 .collumn-2 {
-  display: grid;
-  grid-template-areas:
-    ". ."
-    ". ."
-    ". ."
-    ". .";
-  /* border: solid red 2px; */
+  display: flex;
+  flex-direction: column;
+  gap:2rem;
+  width: 60vw;
+  padding: 0 2rem 0 0;
+  margin: 0 2rem 0 0;
+}
+
+#git-portifolios-wrapper{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#my-projects-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+}
+
+#my-projects-h3-margin{
+  margin: 0;
+}
+
+a{
+  cursor: pointer;
+  text-decoration: none;
+  font-size: smaller;
+}
+
+a:link {
+  color: var(--text-color);
+}
+
+a:visited {
+  color: var(--text-color);
+}
+
+#git-project-container{
+  display: flex;
+  padding: 1.2rem;
+  width: 461px;
+  height: 186px;
+  flex-direction: column;
+}
+
+#git-paragraph{
+  padding-left: 1rem;
+}
+
+#folder-image{
+  padding-right: 0.5rem;
+  width: 16px;
+  height: 15px;
+}
+
+#folder-icon{
+  background-image: url(/images/folder.svg);
 }
